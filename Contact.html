@@ -46,6 +46,19 @@
             padding: 2rem;
         }
 
+        .contact-info {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .contact-info h2 {
+            margin-top: 0;
+        }
+
         form {
             background: white;
             padding: 1.5rem;
@@ -94,11 +107,17 @@
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="about.html">About Me</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Me</a>
         </nav>
     </header>
     <div class="container">
-        <form>
+        <div class="contact-info">
+            <h2>My Contact Info</h2>
+            <p><strong>Email:</strong> Justinm.10123@hotmail.com</p>
+            <p><strong>Phone:</strong> (678) 548-8234</p>
+            <p><strong>Address:</strong> Cartersville, GA 30121</p>
+        </div>
+        <form action="https://formspree.io/f/mkggkqqa" method="POST">
             <h2>Get in Touch</h2>
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>

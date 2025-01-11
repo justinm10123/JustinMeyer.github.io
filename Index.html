@@ -85,35 +85,68 @@
             color: #555;
         }
     </style>
+    <script>
+        /* paste this line in verbatim */
+        window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+        /* customize formbutton below*/     
+        formbutton("create", {
+            action: "https://formspree.io/f/mkggkqqa",
+            title: "How can we help?",
+            fields: [
+                { 
+                    type: "email", 
+                    label: "Email:", 
+                    name: "email",
+                    required: true,
+                    placeholder: "your@email.com"
+                },
+                {
+                    type: "textarea",
+                    label: "Message:",
+                    name: "message",
+                    placeholder: "What's on your mind?",
+                },
+                { type: "submit" }      
+            ],
+            styles: {
+                title: {
+                    backgroundColor: "gray"
+                },
+                button: {
+                    backgroundColor: "gray"
+                }
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
-        <h1>My GIS Portfolio</h1>
+        <h1>Justin Meyer - GIS Portfolio</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">Projects</a>
             <a href="#">About Me</a>
-            <a href="Contact.html">Contact</a>
+            <a href="Contact.html">Contact Me</a>
         </nav>
     </header>
     <div class="container">
         <div class="grid">
             <div class="card">
-                <img src="https://eos.com/wp-content/uploads/2023/04/yuba-city-ca-remote-sensing.jpeg.webp" alt="Project Thumbnail">
+                <img src="https://eos.com/wp-content/uploads/2023/04/waterlogging-in-california-min.gif" alt="Project Thumbnail">
                 <div class="card-content">
                     <h3>Project Title 1</h3>
                     <p>Short description of the project goes here.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="https://eos.com/wp-content/uploads/2023/04/waterlogging-in-california-min.gif" alt="Project Thumbnail">
+                <img src="https://geospatialworld.net/wp-content/uploads/2023/07/1526043436385-1-1920x1170.jpg" alt="Project Thumbnail">
                 <div class="card-content">
                     <h3>Project Title 2</h3>
                     <p>Short description of the project goes here.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="https://geospatialworld.net/wp-content/uploads/2023/07/1526043436385-1-1920x1170.jpg" alt="Project Thumbnail">
+                <img src="https://eos.com/wp-content/uploads/2023/04/yuba-city-ca-remote-sensing.jpeg.webp" alt="Project Thumbnail">
                 <div class="card-content">
                     <h3>Project Title 3</h3>
                     <p>Short description of the project goes here.</p>
@@ -128,13 +161,5 @@
             </div>
         </div>
     </div>
-    <script>
-        // JavaScript for future interactivity
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('click', () => {
-                alert('Card clicked! Navigate to the project details.');
-            });
-        });
-    </script>
 </body>
 </html>
